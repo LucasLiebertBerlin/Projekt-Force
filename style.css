@@ -1,0 +1,224 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(245, 245, 247);
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+
+.navbar {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.dropdown-menu {
+    text-align: left !important;
+}
+
+/*  */
+.maim-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+/* .list-group {
+    width: 200px;
+    margin-right: 50px;
+} */
+
+
+/*  */
+.kanban-wrapper {
+    flex-grow: 1;
+
+}
+
+.kanban {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 170px;
+    height: auto;
+    max-height: 500px;
+    width: 100%;
+    min-width: 300px;
+    overflow: auto;
+    border-left: 1px solid lightgrey;
+
+}
+
+.kanban-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(214, 97, 97);
+    width: auto;
+    height: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: white;
+}
+
+.right-main-wrapper {
+    display: flex;
+    /* flex-wrap: wrap; */
+
+    width: 100%;
+    overflow: auto;
+
+
+    height: auto;
+    overflow-x: auto;
+    /* Horizontales Scrollen aktivieren */
+    overflow-y: hidden;
+    /* Vertikales Scrollen deaktivieren */
+    border-bottom: 1px solid lightgrey;
+}
+
+/* Breite und Höhe der Scrollbar */
+.right-main-wrapper::-webkit-scrollbar {
+    width: 10px;
+    /* Breite der vertikalen Scrollbar */
+    height: 12px;
+    /* Höhe der horizontalen Scrollbar */
+}
+
+/* Track (Hintergrund) der Scrollbar */
+.right-main-wrapper::-webkit-scrollbar-track {
+    background: rgb(126, 176, 230);
+    /* Hintergrundfarbe */
+}
+
+/* Griff der Scrollbar */
+.right-main-wrapper::-webkit-scrollbar-thumb {
+    background:rgb(0,122,255);
+    /* Farbe des Scrollbalkengriffs */
+    border-radius: 6px;
+    /* Radius der Ecken des Griffs */
+}
+
+/* Bei Hover-Zustand des Scrollbalkengriffs */
+.right-main-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgb(4, 69, 139);
+    /* Farbe des Scrollbalkengriffs bei Hover */
+}
+
+
+
+.red {
+    background-color: rgb(210, 32, 46);
+}
+
+.blue {
+    background-color: rgb(0, 122, 255);
+}
+
+.green {
+    background-color: rgb(104, 204, 69);
+}
+
+.yellow {
+    background-color: rgb(255, 176, 3);
+}
+
+.purple {
+    background-color: rgb(172, 57, 255);
+}
+
+.orange {
+    background-color: rgb(244, 121, 95);
+}
+
+.cardExtra {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 70px !important;
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.1s ease-in-out;
+}
+
+.cardExtra:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.img img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.cardExtra:hover>.img {
+    transition: 0.5s ease-in-out;
+}
+
+.textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: black;
+    font-family: 'Poppins' sans-serif;
+}
+
+.textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.span {
+    font-size: 10px;
+}
+
+.h1 {
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+.p {
+    font-size: 12px !important;
+    font-weight: lighter !important;
+    margin: 0 !important;
+}
+
+.g-kalender {
+    width: 100%;
+    height: 70%;
+
+    padding-top: 10px;
+    /* background-color: rgb(0, 122, 255); */
+}
+
+/* Breite und Höhe der Scrollbar */
+.kanban::-webkit-scrollbar {
+    width: 0px;
+    /* Breite der vertikalen Scrollbar */
+    height: 0px;
+    /* Höhe der horizontalen Scrollbar */
+}
